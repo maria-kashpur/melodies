@@ -91,3 +91,22 @@ main {
 }
 
 
+.layout {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+
+  grid-template-areas: "aside header" "aside main" "aside footer";
+  grid-template-columns: 270px auto;
+  grid-template-rows: 140px 1fr auto;
+  column-gap: 20px;
+}
+
+.header {
+  max-width: 1150px;
+}
+
+.main {
+  grid-area: main;
+
+}

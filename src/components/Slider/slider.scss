@@ -1,0 +1,128 @@
+.slider {
+  display: flex;
+  position: relative;
+  align-items: center;
+  // width: 100%;
+  height: 345px;
+  width: 100%;
+  max-width: 1060px;
+  gap: 24px;
+}
+
+.prev, .next {
+  height: 60px;
+  width: 60px;
+  min-width: 60px;
+  
+  border-radius: 50%;
+  background-color: var(--color-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prev{
+  order: 1;
+  transform: rotate(180deg);
+}
+
+.next {
+  order: 3;
+}
+
+.status {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+}
+
+
+.status_item {
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+  &.active {
+    background-color: var(--color-3);
+    border-radius: 5px;
+    width: 15px;
+  }
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  order: 2;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.main_slide {
+  padding: 26px 20px;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  background: url("./home_carusel/1.jpg") center/100% 100% no-repeat;
+}
+
+.main_slide__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.main_slide__text {
+  max-width: 282px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: justify;
+  color: #fff;
+  margin-bottom: 30px;
+  line-height: 25px;
+}
+
+.main_slide__btns {
+  display: flex;
+  gap: 20px;
+}
+
+.main_slide__btn {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+  width: 127px;
+  height: 41px;
+  background-color: transparent;
+  border: 1px solid var(--color-3);
+  outline: 0.5px solid white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.pink {
+    color: var(--color-3);
+    box-shadow: 0px 0px 3px 2px var(--color-3);
+  }
+  &.blue {
+    color: var(--color-2);
+    border-color: #33E9E9;
+    box-shadow: 0px 0px 3px 2px #33E9E9;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}

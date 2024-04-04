@@ -4,7 +4,7 @@ import "./aside.scss"
 export default function Aside() {
   return (
     <aside className="aside">
-      <h1>Melodies</h1>
+      <h1 className="logo">Melodies</h1>
       <nav className="aside_nav">
         {Object.keys(ASIDE).map((title, i) => (
           <div key={i} className="aside_nav__content">

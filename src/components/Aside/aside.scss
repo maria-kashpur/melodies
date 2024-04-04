@@ -1,4 +1,4 @@
-h1 {
+.logo {
   font-family: var(--font-family);
   font-weight: 800;
   font-size: 40px;
@@ -9,10 +9,11 @@ h1 {
 }
 
 .aside {
+  grid-area: aside;
   background: var(--bg-aside);
   height: 100%;
   padding: 50px 25px;
-  max-width: 266px;
+  min-width: 270px;
 }
 
 .aside_nav {
@@ -55,15 +56,11 @@ h1 {
   font-size: 24px;
 
   &:hover {
-    border: 1px solid #F581EA;
+    border: 1px solid var(--color-5);
     box-shadow: 0px 0px 10px 3px #FF3780;
     border-radius: 9px;
 
     background: rgb(215,3,144);
     background: linear-gradient(90deg, #d70390 0%, #71024c 100%);
-    
-    // filter: blur(16.75px);
-    // mix-blend-mode: hard-light;
-    // opacity: 0.7;
   }
 }
